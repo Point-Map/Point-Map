@@ -144,7 +144,7 @@
 <!-- End paper abstract -->
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -173,27 +173,54 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
+<!-- Task Videos -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Real Robot Experiments by Task</h2>
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <!-- Task Template -->
+      <div class="box">
+        <h3 class="title is-4">Drawer</h3>
+        <p>In the Drawer task, there is a cabinet with two drawers and two different objects, a cube and a cylinder. The robot must follow a language-specified instruction to open the designated drawer, pick up the target object, place it inside the drawer, and then close the drawer. The key challenges involve handling the random initialization of both the cabinet’s position and the objects’ locations.</p>
+        <video controls width="100%"><source src="static/videos/drawer.mp4" type="video/mp4"></video>
       </div>
+
+      <div class="box">
+        <h3 class="title is-4">Stack</h3>
+        <p>In the Stack task, four cups of different colors and sizes are provided. The robot must stack the cups in a specific order based on their colors. The main challenges lie in accurately recalling the stacking sequence and executing precise placement, as the cups are closely sized and must fit together properly.</p>
+        <video controls width="100%"><source src="static/videos/stack.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Pour</h3>
+        <p>In the Pour task, three distinct cups and three different containers are placed in randomized initial positions. The robot must generalize to novel object configurations while maintaining the precision necessary to pour the contents from the cups into the containers without spilling. The primary challenge lies in adapting to varying spatial arrangements while executing controlled and accurate pouring motions.</p>
+        <video controls width="100%"><source src="static/videos/pour.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Sweep</h3>
+        <p>Unlike standard Pick-and-Place tasks, this task requires the robot to acquire a novel sweeping skill. In the Sweep task, the positions of the broom, dustpan, and trash vary across trials, and even the number of trash items changes. The key challenge is manipulating deformable trash materials that differ from those encountered during training, requiring the policy to exhibit strong generalization and adaptability.</p>
+        <video controls width="100%"><source src="static/videos/sweep.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Fold</h3>
+        <p>The Fold task requires precise manipulation skills. The goal is to neatly fold a towel that is randomly oriented at the start of each trial. The primary challenge lies in accurately handling the soft, deformable material to achieve a clean and consistent fold despite varying initial conditions.</p>
+        <video controls width="100%"><source src="static/videos/fold.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Arrange</h3>
+        <p>In the Arrange task, the setup includes a mixing machine and a container. The robot must follow a specific sequence: first, open the mixing machine; next, place the container on the designated pad; and finally, close the machine. This task primarily emphasizes long-horizon planning, requiring the robot to execute a multi-step procedure in the correct order.</p>
+        <video controls width="100%"><source src="static/videos/arrange.mp4" type="video/mp4"></video>
+      </div>
+
     </div>
   </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
