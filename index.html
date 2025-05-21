@@ -143,6 +143,27 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Different approaches for point cloud processing</h2>
+    <p class="content has-text-justified">
+      This figure illustrates three paradigms for processing 3D point clouds. (a) Downsampling-based approaches reduce dense clouds to sparse ones using Furthest Point Sampling (FPS), which are then processed by models like PointNet. (b) 3D lifting-based methods first extract image features, lift them to 3D space, and generate semantically rich scene tokens. (c) Our PointMap approach restructures the point cloud as a 2D grid matching the resolution of the corresponding RGB image, allowing independent encoding and fusion with standard vision transformers.
+    </p>
+    <figure class="image is-4by3">
+      <img src="static/images/point_cloud_process.pdf" alt="Point Cloud Processing Approaches">
+    </figure>
+
+    <h2 class="title is-3 has-text-centered" style="margin-top: 3rem;">Overview of PMP (PointMapPolicy)</h2>
+    <p class="content has-text-justified">
+      PMP integrates multiple modalities including language, RGB images, and structured point maps. Language instructions are encoded via a pretrained CLIP model. Visual encoders extract features from both image and structured point map modalities. These tokens are jointly fed into a cross-modal X-Block and processed using x-LSTM to produce denoised action predictions, enabling efficient multi-modal imitation learning.
+    </p>
+    <figure class="image is-4by3">
+      <img src="static/images/architecture.pdf" alt="Overview of PointMapPolicy Architecture">
+    </figure>
+  </div>
+</section>
+
+
 <!-- Task Videos -->
 <section class="section">
   <div class="container is-max-desktop">
